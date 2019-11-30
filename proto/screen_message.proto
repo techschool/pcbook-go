@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package techschool.pcbook;
+
+option go_package = "pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
+
+message Screen {
+  message Resolution {
+    uint32 width = 1;
+    uint32 height = 2;
+  }
+
+  enum Panel {
+    UNKNOWN = 0;
+    IPS = 1;
+    OLED = 2;
+  }
+
+  float size_inch = 1;
+  Resolution resolution = 2;
+  Panel panel = 3;
+  bool multitouch = 4;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package techschool.pcbook;
+
+option go_package = "pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
+
+import "memory_message.proto";
+
+message CPU {
+  string brand = 1;
+  string name = 2;
+  uint32 number_cores = 3;
+  uint32 number_threads = 4;
+  double min_ghz = 5;
+  double max_ghz = 6;
+}
+
+message GPU {
+  string brand = 1;
+  string name = 2;
+  double min_ghz = 3;
+  double max_ghz = 4;
+  Memory memory = 5;
+}
