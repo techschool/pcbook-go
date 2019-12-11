@@ -1,0 +1,62 @@
+{
+  "id": "787aeffc-970f-4308-a6ab-7811b8504273",
+  "brand": "Dell",
+  "name": "Vostro",
+  "cpu": {
+    "brand": "AMD",
+    "name": "Ryzen 3 PRO 3200GE",
+    "number_cores": 2,
+    "number_threads": 5,
+    "min_ghz": 3.448482122890906,
+    "max_ghz": 3.7941170081418045
+  },
+  "ram": {
+    "value": "59",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "Nvidia",
+      "name": "GTX 1660-Ti",
+      "min_ghz": 1.3914819603972246,
+      "max_ghz": 1.454957497872271,
+      "memory": {
+        "value": "3",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "497",
+        "unit": "GIGABYTE"
+      }
+    },
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "4",
+        "unit": "TERABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "size_inch": 14.808749,
+    "resolution": {
+      "width": 3196,
+      "height": 1798
+    },
+    "panel": "OLED",
+    "multitouch": false
+  },
+  "keyboard": {
+    "layout": "QWERTZ",
+    "backlit": false
+  },
+  "weight_kg": 1.6214999132752312,
+  "price_usd": 3207.989691088219,
+  "release_year": 2015,
+  "updated_at": "2019-12-11T22:35:40.443587Z"
+}
