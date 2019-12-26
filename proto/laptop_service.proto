@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package techschool.pcbook;
+
+option go_package = "pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
+
+import "laptop_message.proto";
+
+message CreateLaptopRequest { Laptop laptop = 1; }
+
+message CreateLaptopResponse { string id = 1; }
+
+service LaptopService {
+  rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {};
+}
