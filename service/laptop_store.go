@@ -21,7 +21,7 @@ type LaptopStore interface {
 	// Find finds a laptop by ID
 	Find(id string) (*pb.Laptop, error)
 	// Search searches for laptops with filter, returns one by one via the found function
-	Search(ctx context.Context, filter *pb.Filter, found func(laptop *pb.Laptop)) error
+	Search(ctx context.Context, filter *pb.Filter, found func(laptop *pb.Laptop) error) error
 }
 
 // InMemoryLaptopStore stores laptop in memory
@@ -72,7 +72,7 @@ func (store *InMemoryLaptopStore) Find(id string) (*pb.Laptop, error) {
 func (store *InMemoryLaptopStore) Search(
 	ctx context.Context,
 	filter *pb.Filter,
-	found func(laptop *pb.Laptop),
+	found func(laptop *pb.Laptop) error,
 ) error {
 	store.mutex.RLock()
 	defer store.mutex.RUnlock()
@@ -85,13 +85,17 @@ func (store *InMemoryLaptopStore) Search(
 
 		// time.Sleep(time.Second)
 		// log.Print("checking laptop id: ", laptop.GetId())
+
 		if isQualified(filter, laptop) {
 			other, err := deepCopy(laptop)
 			if err != nil {
 				return err
 			}
 
-			found(other)
+			err = found(other)
+			if err != nil {
+				return err
+			}
 		}
 	}
 
