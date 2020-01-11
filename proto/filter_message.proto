@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package techschool.pcbook;
+
+option go_package = "pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
+
+import "memory_message.proto";
+
+message Filter {
+    double max_price_usd = 1;
+    uint32 min_cpu_cores = 2;
+    double min_cpu_ghz = 3;
+    Memory min_ram = 4;
+}
