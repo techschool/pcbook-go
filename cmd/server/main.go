@@ -3,11 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
+	"net"
+
 	"gitlab.com/techschool/pcbook/pb"
 	"gitlab.com/techschool/pcbook/service"
 	"google.golang.org/grpc"
-	"log"
-	"net"
 )
 
 func main() {
@@ -15,7 +16,10 @@ func main() {
 	flag.Parse()
 	log.Printf("start server on port %d", *port)
 
-	laptopServer := service.NewLaptopServer(service.NewInMemoryLaptopStore())
+	laptopStore := service.NewInMemoryLaptopStore()
+	imageStore := service.NewDiskImageStore("img")
+	laptopServer := service.NewLaptopServer(laptopStore, imageStore)
+
 	grpcServer := grpc.NewServer()
 	pb.RegisterLaptopServiceServer(grpcServer, laptopServer)
 

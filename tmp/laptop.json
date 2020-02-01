@@ -1,27 +1,27 @@
 {
-  "id": "787aeffc-970f-4308-a6ab-7811b8504273",
-  "brand": "Dell",
-  "name": "Vostro",
+  "id": "f985f628-7e2b-4fbb-9a91-f995b9e45fed",
+  "brand": "Lenovo",
+  "name": "Thinkpad X1",
   "cpu": {
     "brand": "AMD",
     "name": "Ryzen 3 PRO 3200GE",
-    "number_cores": 2,
-    "number_threads": 5,
-    "min_ghz": 3.448482122890906,
-    "max_ghz": 3.7941170081418045
+    "number_cores": 7,
+    "number_threads": 11,
+    "min_ghz": 2.9916611709835643,
+    "max_ghz": 4.386852601091814
   },
   "ram": {
-    "value": "59",
+    "value": "37",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
-      "brand": "Nvidia",
-      "name": "GTX 1660-Ti",
-      "min_ghz": 1.3914819603972246,
-      "max_ghz": 1.454957497872271,
+      "brand": "AMD",
+      "name": "RX 580",
+      "min_ghz": 1.0310243424561065,
+      "max_ghz": 1.3981274757507098,
       "memory": {
-        "value": "3",
+        "value": "4",
         "unit": "GIGABYTE"
       }
     }
@@ -30,33 +30,33 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "497",
+        "value": "858",
         "unit": "GIGABYTE"
       }
     },
     {
       "driver": "HDD",
       "memory": {
-        "value": "4",
+        "value": "5",
         "unit": "TERABYTE"
       }
     }
   ],
   "screen": {
-    "size_inch": 14.808749,
+    "size_inch": 13.001346,
     "resolution": {
-      "width": 3196,
-      "height": 1798
+      "width": 3159,
+      "height": 1777
     },
-    "panel": "OLED",
-    "multitouch": false
+    "panel": "IPS",
+    "multitouch": true
   },
   "keyboard": {
-    "layout": "QWERTZ",
-    "backlit": false
+    "layout": "AZERTY",
+    "backlit": true
   },
-  "weight_kg": 1.6214999132752312,
-  "price_usd": 3207.989691088219,
-  "release_year": 2015,
-  "updated_at": "2019-12-11T22:35:40.443587Z"
+  "weight_kg": 1.7129258826772167,
+  "price_usd": 1624.8346892538848,
+  "release_year": 2017,
+  "updated_at": "2020-02-01T11:55:48.330566Z"
 }
