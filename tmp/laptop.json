@@ -1,27 +1,27 @@
 {
-  "id": "f985f628-7e2b-4fbb-9a91-f995b9e45fed",
+  "id": "92e243f7-765d-46ad-8d9b-04f17d2fb896",
   "brand": "Lenovo",
   "name": "Thinkpad X1",
   "cpu": {
     "brand": "AMD",
-    "name": "Ryzen 3 PRO 3200GE",
-    "number_cores": 7,
-    "number_threads": 11,
-    "min_ghz": 2.9916611709835643,
-    "max_ghz": 4.386852601091814
+    "name": "Ryzen 7 PRO 2700U",
+    "number_cores": 6,
+    "number_threads": 7,
+    "min_ghz": 2.50775117036238,
+    "max_ghz": 4.430918320496243
   },
   "ram": {
-    "value": "37",
+    "value": "48",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
-      "brand": "AMD",
-      "name": "RX 580",
-      "min_ghz": 1.0310243424561065,
-      "max_ghz": 1.3981274757507098,
+      "brand": "Nvidia",
+      "name": "GTX 1660-Ti",
+      "min_ghz": 1.3772492055462109,
+      "max_ghz": 1.6773382221243418,
       "memory": {
-        "value": "4",
+        "value": "6",
         "unit": "GIGABYTE"
       }
     }
@@ -30,7 +30,7 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "858",
+        "value": "1000",
         "unit": "GIGABYTE"
       }
     },
@@ -43,20 +43,20 @@
     }
   ],
   "screen": {
-    "size_inch": 13.001346,
+    "size_inch": 16.609983,
     "resolution": {
-      "width": 3159,
-      "height": 1777
+      "width": 4206,
+      "height": 2366
     },
-    "panel": "IPS",
+    "panel": "OLED",
     "multitouch": true
   },
   "keyboard": {
-    "layout": "AZERTY",
-    "backlit": true
+    "layout": "QWERTZ",
+    "backlit": false
   },
-  "weight_kg": 1.7129258826772167,
-  "price_usd": 1624.8346892538848,
+  "weight_kg": 2.511302663485663,
+  "price_usd": 1829.5181216375395,
   "release_year": 2017,
-  "updated_at": "2020-02-01T11:55:48.330566Z"
+  "updated_at": "2020-02-14T23:11:49.705801Z"
 }
