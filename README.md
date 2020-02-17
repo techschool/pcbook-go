@@ -2,6 +2,8 @@
 
 This repository contains the Golang codes for the hands-on section of [The complete gRPC course](http://bit.ly/grpccourse) by [TECH SCHOOL](https://dev.to/techschoolguru).
 
+![The complete gRPC course](https://dev-to-uploads.s3.amazonaws.com/i/11r59di6zlyxf6g8o4s9.png)
+
 ## The PC book application
 
 PC book is an application to manage and search laptop configurations. It provides 4 gRPC APIs:
