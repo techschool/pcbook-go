@@ -1,27 +1,27 @@
 {
-  "id": "92e243f7-765d-46ad-8d9b-04f17d2fb896",
-  "brand": "Lenovo",
-  "name": "Thinkpad X1",
+  "id": "293a7891-bb7a-408d-9193-9f3a7a89b886",
+  "brand": "Dell",
+  "name": "XPS",
   "cpu": {
-    "brand": "AMD",
-    "name": "Ryzen 7 PRO 2700U",
-    "number_cores": 6,
-    "number_threads": 7,
-    "min_ghz": 2.50775117036238,
-    "max_ghz": 4.430918320496243
+    "brand": "Intel",
+    "name": "Core i5-9400F",
+    "number_cores": 8,
+    "number_threads": 12,
+    "min_ghz": 2.513025804008794,
+    "max_ghz": 3.278936212483462
   },
   "ram": {
-    "value": "48",
+    "value": "35",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
       "brand": "Nvidia",
-      "name": "GTX 1660-Ti",
-      "min_ghz": 1.3772492055462109,
-      "max_ghz": 1.6773382221243418,
+      "name": "GTX 1070",
+      "min_ghz": 1.2017887101709919,
+      "max_ghz": 1.522383429422187,
       "memory": {
-        "value": "6",
+        "value": "5",
         "unit": "GIGABYTE"
       }
     }
@@ -30,23 +30,23 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "1000",
+        "value": "419",
         "unit": "GIGABYTE"
       }
     },
     {
       "driver": "HDD",
       "memory": {
-        "value": "5",
+        "value": "3",
         "unit": "TERABYTE"
       }
     }
   ],
   "screen": {
-    "size_inch": 16.609983,
+    "size_inch": 15.342661,
     "resolution": {
-      "width": 4206,
-      "height": 2366
+      "width": 7123,
+      "height": 4007
     },
     "panel": "OLED",
     "multitouch": true
@@ -55,8 +55,8 @@
     "layout": "QWERTZ",
     "backlit": false
   },
-  "weight_kg": 2.511302663485663,
-  "price_usd": 1829.5181216375395,
-  "release_year": 2017,
-  "updated_at": "2020-02-14T23:11:49.705801Z"
+  "weight_kg": 1.8096541682720155,
+  "price_usd": 1726.786235602899,
+  "release_year": 2015,
+  "updated_at": "2020-03-12T08:56:15.692296Z"
 }
