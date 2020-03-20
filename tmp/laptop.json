@@ -1,27 +1,27 @@
 {
-  "id": "293a7891-bb7a-408d-9193-9f3a7a89b886",
-  "brand": "Dell",
-  "name": "XPS",
+  "id": "8289ee9d-c2fd-4379-a40d-468c406832f8",
+  "brand": "Lenovo",
+  "name": "Thinkpad X1",
   "cpu": {
     "brand": "Intel",
-    "name": "Core i5-9400F",
+    "name": "Core i9-9980HK",
     "number_cores": 8,
-    "number_threads": 12,
-    "min_ghz": 2.513025804008794,
-    "max_ghz": 3.278936212483462
+    "number_threads": 8,
+    "min_ghz": 2.4384555943737207,
+    "max_ghz": 3.5020915397165173
   },
   "ram": {
-    "value": "35",
+    "value": "53",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
       "brand": "Nvidia",
       "name": "GTX 1070",
-      "min_ghz": 1.2017887101709919,
-      "max_ghz": 1.522383429422187,
+      "min_ghz": 1.4593108205514078,
+      "max_ghz": 1.773497159374649,
       "memory": {
-        "value": "5",
+        "value": "4",
         "unit": "GIGABYTE"
       }
     }
@@ -30,33 +30,33 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "419",
+        "value": "939",
         "unit": "GIGABYTE"
       }
     },
     {
       "driver": "HDD",
       "memory": {
-        "value": "3",
+        "value": "5",
         "unit": "TERABYTE"
       }
     }
   ],
   "screen": {
-    "size_inch": 15.342661,
+    "size_inch": 16.589464,
     "resolution": {
-      "width": 7123,
-      "height": 4007
+      "width": 5064,
+      "height": 2849
     },
-    "panel": "OLED",
+    "panel": "IPS",
     "multitouch": true
   },
   "keyboard": {
-    "layout": "QWERTZ",
+    "layout": "QWERTY",
     "backlit": false
   },
-  "weight_kg": 1.8096541682720155,
-  "price_usd": 1726.786235602899,
-  "release_year": 2015,
-  "updated_at": "2020-03-12T08:56:15.692296Z"
+  "weight_kg": 2.10955921861156,
+  "price_usd": 1953.663626413914,
+  "release_year": 2019,
+  "updated_at": "2020-03-20T23:04:21.053833Z"
 }
