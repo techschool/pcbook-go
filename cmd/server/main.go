@@ -52,7 +52,7 @@ func main() {
 	userStore := service.NewInMemoryUserStore()
 	err := seedUsers(userStore)
 	if err != nil {
-		log.Fatal("cannot seed users")
+		log.Fatal("cannot seed users: ", err)
 	}
 
 	jwtManager := service.NewJWTManager(secretKey, tokenDuration)
