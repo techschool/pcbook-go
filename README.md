@@ -4,6 +4,30 @@ This repository contains the Golang codes for the hands-on section of [The compl
 
 ![The complete gRPC course](https://dev-to-uploads.s3.amazonaws.com/i/11r59di6zlyxf6g8o4s9.png)
 
+## The complete gRPC course
+
+If you're building APIs for your microservices or mobile applications, you definitely want to try gRPC. It is super-fast, strongly-typed, and you no longer need to write a lot of boilerplate codes for services communication. Thanks to awesome HTTP/2 and Protocol Buffer!
+
+This is a 4-in-1 course, where you will learn not only gRPC, but also protocol-buffer and backend development with Go and Java. The codes in this course are production-grade, with well-organised structure and unit tests.
+
+### What you’ll learn:
+
+- What gRPC is, how it works, why we should use it, and where it is suitable to.
+- The amazing HTTP/2 protocol that gRPC is built on.
+- Compare gRPC with REST.
+- Write and serialise protocol-buffer messages using Go + Java.
+- Define gRPC services with protocol-buffer and generate Go + Java codes.
+- Implement 4 types of gRPC using Go + Java: unary, server-streaming, client-streaming, bidirectional streaming.
+- Handle context deadline, gRPC errors and status codes.
+- Write production-grade application with interfaces and unit tests for gRPC services.
+- Use gRPC interceptors to authenticate & authorise users with JWT.
+- Secure gRPC connection with sever-side & mutual SSL/TLS.
+- Enable gRPC reflections for service discovery.
+
+### Are there any course requirements or prerequisites?
+
+- You only need to have basic programming skills in Go or Java.
+
 ## The PC book application
 
 PC book is an application to manage and search laptop configurations. It provides 4 gRPC APIs:
@@ -41,27 +65,6 @@ PC book is an application to manage and search laptop configurations. It provide
     The input of the API is a stream of requests, each with a laptop ID and a score.
 
     The API will returns a stream of responses, each contains a laptop ID, the number of times that laptop was rated, and the average rated score.
-
-## The complete gRPC course
-
-If you're building APIs for your microservices or mobile applications, you definitely want to try gRPC. It is super-fast, strongly-typed, and you no longer need to write a lot of boilerplate codes for services communication. Thanks to awesome HTTP/2 and Protocol Buffer!
-
-This is a 4-in-1 course, where you will learn not only gRPC, but also protocol-buffer and backend development with Go and Java. The codes in this course are production-grade, with well-organised structure and unit tests.
-
-### What you’ll learn:
-
-- What gRPC is, how it works, why we should use it, and where it is suitable to.
-- The amazing HTTP/2 protocol that gRPC is built on.
-- Compare gRPC with REST.
-- Write and serialise protocol-buffer messages using Go + Java.
-- Define gRPC services with protocol-buffer and generate Go + Java codes.
-- Implement 4 types of gRPC using Go + Java: unary, server-streaming, client-streaming and bidirectional streaming.
-- Handle context deadline, gRPC errors and status codes
-Write production-grade application with interfaces and unit tests for gRPC services.
-
-### Are there any course requirements or prerequisites?
-
-- You only need to have basic programming skills in Go or Java.
 
 ## TECH SCHOOL - From noob to pro
 
