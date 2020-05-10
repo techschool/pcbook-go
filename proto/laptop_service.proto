@@ -2,12 +2,13 @@ syntax = "proto3";
 
 package techschool.pcbook;
 
-option go_package = "pb";
+option go_package = ".;pb";
 option java_package = "com.gitlab.techschool.pcbook.pb";
 option java_multiple_files = true;
 
 import "laptop_message.proto";
 import "filter_message.proto";
+import "google/api/annotations.proto";
 
 message CreateLaptopRequest { Laptop laptop = 1; }
 
@@ -46,10 +47,27 @@ message RateLaptopResponse {
 }
 
 service LaptopService {
-  rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {};
-  rpc SearchLaptop(SearchLaptopRequest) returns (stream SearchLaptopResponse) {
+  rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {
+    option (google.api.http) = {
+      post : "/v1/laptop/create"
+      body : "*"
+    };
   };
-  rpc UploadImage(stream UploadImageRequest) returns (UploadImageResponse) {};
+  rpc SearchLaptop(SearchLaptopRequest) returns (stream SearchLaptopResponse) {
+    option (google.api.http) = {
+      get : "/v1/laptop/search"
+    };
+  };
+  rpc UploadImage(stream UploadImageRequest) returns (UploadImageResponse) {
+    option (google.api.http) = {
+      post : "/v1/laptop/upload_image"
+      body : "*"
+    };
+  };
   rpc RateLaptop(stream RateLaptopRequest) returns (stream RateLaptopResponse) {
+    option (google.api.http) = {
+      post : "/v1/laptop/rate"
+      body : "*"
+    };
   };
 }
