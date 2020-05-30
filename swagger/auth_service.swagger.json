@@ -24,7 +24,7 @@
           "default": {
             "description": "An unexpected error response",
             "schema": {
-              "$ref": "#/definitions/runtimeError"
+              "$ref": "#/definitions/rpcStatus"
             }
           }
         },
@@ -59,7 +59,7 @@
     "pcbookLoginResponse": {
       "type": "object",
       "properties": {
-        "access_token": {
+        "accessToken": {
           "type": "string"
         }
       }
@@ -67,7 +67,7 @@
     "protobufAny": {
       "type": "object",
       "properties": {
-        "type_url": {
+        "typeUrl": {
           "type": "string"
         },
         "value": {
@@ -76,12 +76,9 @@
         }
       }
     },
-    "runtimeError": {
+    "rpcStatus": {
       "type": "object",
       "properties": {
-        "error": {
-          "type": "string"
-        },
         "code": {
           "type": "integer",
           "format": "int32"

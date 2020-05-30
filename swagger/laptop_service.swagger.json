@@ -24,7 +24,7 @@
           "default": {
             "description": "An unexpected error response",
             "schema": {
-              "$ref": "#/definitions/runtimeError"
+              "$ref": "#/definitions/rpcStatus"
             }
           }
         },
@@ -56,7 +56,7 @@
                   "$ref": "#/definitions/pcbookRateLaptopResponse"
                 },
                 "error": {
-                  "$ref": "#/definitions/runtimeStreamError"
+                  "$ref": "#/definitions/rpcStatus"
                 }
               },
               "title": "Stream result of pcbookRateLaptopResponse"
@@ -65,7 +65,7 @@
           "default": {
             "description": "An unexpected error response",
             "schema": {
-              "$ref": "#/definitions/runtimeError"
+              "$ref": "#/definitions/rpcStatus"
             }
           }
         },
@@ -98,7 +98,7 @@
                   "$ref": "#/definitions/pcbookSearchLaptopResponse"
                 },
                 "error": {
-                  "$ref": "#/definitions/runtimeStreamError"
+                  "$ref": "#/definitions/rpcStatus"
                 }
               },
               "title": "Stream result of pcbookSearchLaptopResponse"
@@ -107,41 +107,41 @@
           "default": {
             "description": "An unexpected error response",
             "schema": {
-              "$ref": "#/definitions/runtimeError"
+              "$ref": "#/definitions/rpcStatus"
             }
           }
         },
         "parameters": [
           {
-            "name": "filter.max_price_usd",
+            "name": "filter.maxPriceUsd",
             "in": "query",
             "required": false,
             "type": "number",
             "format": "double"
           },
           {
-            "name": "filter.min_cpu_cores",
+            "name": "filter.minCpuCores",
             "in": "query",
             "required": false,
             "type": "integer",
             "format": "int64"
           },
           {
-            "name": "filter.min_cpu_ghz",
+            "name": "filter.minCpuGhz",
             "in": "query",
             "required": false,
             "type": "number",
             "format": "double"
           },
           {
-            "name": "filter.min_ram.value",
+            "name": "filter.minRam.value",
             "in": "query",
             "required": false,
             "type": "string",
             "format": "uint64"
           },
           {
-            "name": "filter.min_ram.unit",
+            "name": "filter.minRam.unit",
             "in": "query",
             "required": false,
             "type": "string",
@@ -175,7 +175,7 @@
           "default": {
             "description": "An unexpected error response",
             "schema": {
-              "$ref": "#/definitions/runtimeError"
+              "$ref": "#/definitions/rpcStatus"
             }
           }
         },
@@ -260,19 +260,19 @@
         "name": {
           "type": "string"
         },
-        "number_cores": {
+        "numberCores": {
           "type": "integer",
           "format": "int64"
         },
-        "number_threads": {
+        "numberThreads": {
           "type": "integer",
           "format": "int64"
         },
-        "min_ghz": {
+        "minGhz": {
           "type": "number",
           "format": "double"
         },
-        "max_ghz": {
+        "maxGhz": {
           "type": "number",
           "format": "double"
         }
@@ -297,19 +297,19 @@
     "pcbookFilter": {
       "type": "object",
       "properties": {
-        "max_price_usd": {
+        "maxPriceUsd": {
           "type": "number",
           "format": "double"
         },
-        "min_cpu_cores": {
+        "minCpuCores": {
           "type": "integer",
           "format": "int64"
         },
-        "min_cpu_ghz": {
+        "minCpuGhz": {
           "type": "number",
           "format": "double"
         },
-        "min_ram": {
+        "minRam": {
           "$ref": "#/definitions/pcbookMemory"
         }
       }
@@ -323,11 +323,11 @@
         "name": {
           "type": "string"
         },
-        "min_ghz": {
+        "minGhz": {
           "type": "number",
           "format": "double"
         },
-        "max_ghz": {
+        "maxGhz": {
           "type": "number",
           "format": "double"
         },
@@ -339,10 +339,10 @@
     "pcbookImageInfo": {
       "type": "object",
       "properties": {
-        "laptop_id": {
+        "laptopId": {
           "type": "string"
         },
-        "image_type": {
+        "imageType": {
           "type": "string"
         }
       }
@@ -395,23 +395,23 @@
         "keyboard": {
           "$ref": "#/definitions/pcbookKeyboard"
         },
-        "weight_kg": {
+        "weightKg": {
           "type": "number",
           "format": "double"
         },
-        "weight_lb": {
+        "weightLb": {
           "type": "number",
           "format": "double"
         },
-        "price_usd": {
+        "priceUsd": {
           "type": "number",
           "format": "double"
         },
-        "release_year": {
+        "releaseYear": {
           "type": "integer",
           "format": "int64"
         },
-        "updated_at": {
+        "updatedAt": {
           "type": "string",
           "format": "date-time"
         }
@@ -432,7 +432,7 @@
     "pcbookRateLaptopRequest": {
       "type": "object",
       "properties": {
-        "laptop_id": {
+        "laptopId": {
           "type": "string"
         },
         "score": {
@@ -444,14 +444,14 @@
     "pcbookRateLaptopResponse": {
       "type": "object",
       "properties": {
-        "laptop_id": {
+        "laptopId": {
           "type": "string"
         },
-        "rated_count": {
+        "ratedCount": {
           "type": "integer",
           "format": "int64"
         },
-        "average_score": {
+        "averageScore": {
           "type": "number",
           "format": "double"
         }
@@ -460,7 +460,7 @@
     "pcbookScreen": {
       "type": "object",
       "properties": {
-        "size_inch": {
+        "sizeInch": {
           "type": "number",
           "format": "float"
         },
@@ -501,7 +501,7 @@
         "info": {
           "$ref": "#/definitions/pcbookImageInfo"
         },
-        "chunk_data": {
+        "chunkData": {
           "type": "string",
           "format": "byte"
         }
@@ -522,7 +522,7 @@
     "protobufAny": {
       "type": "object",
       "properties": {
-        "type_url": {
+        "typeUrl": {
           "type": "string"
         },
         "value": {
@@ -531,42 +531,14 @@
         }
       }
     },
-    "runtimeError": {
+    "rpcStatus": {
       "type": "object",
       "properties": {
-        "error": {
-          "type": "string"
-        },
         "code": {
           "type": "integer",
           "format": "int32"
         },
         "message": {
-          "type": "string"
-        },
-        "details": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/protobufAny"
-          }
-        }
-      }
-    },
-    "runtimeStreamError": {
-      "type": "object",
-      "properties": {
-        "grpc_code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "http_code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "message": {
-          "type": "string"
-        },
-        "http_status": {
           "type": "string"
         },
         "details": {
