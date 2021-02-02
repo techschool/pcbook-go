@@ -10,7 +10,7 @@ If you're building APIs for your microservices or mobile applications, you defin
 
 This is a 4-in-1 course, where you will learn not only gRPC, but also protocol-buffer and backend development with Go and Java. The codes in this course are production-grade, with well-organised structure and unit tests.
 
-### What you’ll learn:
+### What you’ll learn
 
 - What gRPC is, how it works, why we should use it, and where it is suitable to.
 - The amazing HTTP/2 protocol that gRPC is built on.
@@ -65,6 +65,61 @@ PC book is an application to manage and search laptop configurations. It provide
     The input of the API is a stream of requests, each with a laptop ID and a score.
 
     The API will returns a stream of responses, each contains a laptop ID, the number of times that laptop was rated, and the average rated score.
+
+## Setup development environment
+
+- Install `protoc`:
+
+```bash
+brew install protobuf
+```
+
+- Install `protoc-gen-go` and `protoc-gen-go-grpc`
+
+```bash
+go get google.golang.org/protobuf/cmd/protoc-gen-go
+go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
+```
+
+- Install `protoc-gen-grpc-gateway` and `protoc-gen-openapiv2`
+
+```bash
+go get github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
+go get github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
+```
+
+## How to run
+
+- Generate codes from proto files:
+
+```bash
+make gen
+```
+
+- Clean up generated codes in `pb` and `swagger` folders:
+
+```bash
+make clean
+```
+
+- Run unit tests:
+
+```bash
+make test
+```
+
+- Run server and client:
+
+```bash
+make server
+make client
+```
+
+- Generate SSL/TLS certificates:
+
+```bash
+make cert
+```
 
 ## TECH SCHOOL - From noob to pro
 
