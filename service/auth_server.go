@@ -10,13 +10,14 @@ import (
 
 // AuthServer is the server for authentication
 type AuthServer struct {
+	pb.UnimplementedAuthServiceServer
 	userStore  UserStore
 	jwtManager *JWTManager
 }
 
 // NewAuthServer returns a new auth server
-func NewAuthServer(userStore UserStore, jwtManager *JWTManager) *AuthServer {
-	return &AuthServer{userStore, jwtManager}
+func NewAuthServer(userStore UserStore, jwtManager *JWTManager) pb.AuthServiceServer {
+	return &AuthServer{userStore: userStore, jwtManager: jwtManager}
 }
 
 // Login is a unary RPC to login user

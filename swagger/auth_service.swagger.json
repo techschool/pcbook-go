@@ -4,6 +4,11 @@
     "title": "auth_service.proto",
     "version": "version not set"
   },
+  "tags": [
+    {
+      "name": "AuthService"
+    }
+  ],
   "consumes": [
     "application/json"
   ],
@@ -22,7 +27,7 @@
             }
           },
           "default": {
-            "description": "An unexpected error response",
+            "description": "An unexpected error response.",
             "schema": {
               "$ref": "#/definitions/rpcStatus"
             }

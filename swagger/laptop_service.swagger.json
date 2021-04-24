@@ -4,6 +4,11 @@
     "title": "laptop_service.proto",
     "version": "version not set"
   },
+  "tags": [
+    {
+      "name": "LaptopService"
+    }
+  ],
   "consumes": [
     "application/json"
   ],
@@ -22,7 +27,7 @@
             }
           },
           "default": {
-            "description": "An unexpected error response",
+            "description": "An unexpected error response.",
             "schema": {
               "$ref": "#/definitions/rpcStatus"
             }
@@ -63,7 +68,7 @@
             }
           },
           "default": {
-            "description": "An unexpected error response",
+            "description": "An unexpected error response.",
             "schema": {
               "$ref": "#/definitions/rpcStatus"
             }
@@ -105,7 +110,7 @@
             }
           },
           "default": {
-            "description": "An unexpected error response",
+            "description": "An unexpected error response.",
             "schema": {
               "$ref": "#/definitions/rpcStatus"
             }
@@ -173,7 +178,7 @@
             }
           },
           "default": {
-            "description": "An unexpected error response",
+            "description": "An unexpected error response.",
             "schema": {
               "$ref": "#/definitions/rpcStatus"
             }
@@ -354,8 +359,7 @@
           "$ref": "#/definitions/KeyboardLayout"
         },
         "backlit": {
-          "type": "boolean",
-          "format": "boolean"
+          "type": "boolean"
         }
       }
     },
@@ -471,8 +475,7 @@
           "$ref": "#/definitions/ScreenPanel"
         },
         "multitouch": {
-          "type": "boolean",
-          "format": "boolean"
+          "type": "boolean"
         }
       }
     },
